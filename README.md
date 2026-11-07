@@ -7,12 +7,12 @@ Started as homepage inventory extracted from the `wp-to-clean-static` pipeline. 
 ## Install
 
 ```bash
-npm install github:sllark/page-structure-audit
+npm install github:Slark-labs/page-structure-audit
 npx playwright install chromium
-# or from this repo: npm run prepare:browser
+# or from this package: npm explore page-structure-audit -- npm run prepare:browser
 ```
 
-Requires **Node 18+** and `OPENROUTER_API_KEY`.
+Private org repos need git SSH access (or a token URL). Requires **Node 18+** and `OPENROUTER_API_KEY`.
 
 ## Library
 
