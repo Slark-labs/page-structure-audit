@@ -1,0 +1,44 @@
+{
+  "name": "page-structure-audit",
+  "version": "0.1.0",
+  "description": "Page structure / section / CTA / trust inventory via Playwright + OpenRouter",
+  "type": "module",
+  "main": "./src/index.mjs",
+  "exports": {
+    ".": "./src/index.mjs"
+  },
+  "bin": {
+    "page-structure-audit": "./src/cli.mjs",
+    "psa": "./src/cli.mjs"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "env.example"
+  ],
+  "scripts": {
+    "audit": "node src/cli.mjs",
+    "prepare:browser": "npx playwright install chromium"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "playwright": "^1.59.1",
+    "sharp": "^0.34.5"
+  },
+  "keywords": [
+    "page-structure",
+    "inventory",
+    "homepage",
+    "seo",
+    "playwright",
+    "openrouter"
+  ],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sllark/page-structure-audit.git"
+  }
+}
